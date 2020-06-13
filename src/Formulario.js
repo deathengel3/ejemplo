@@ -26,7 +26,13 @@ class Formulario extends React.Component {
                         <h1 key={index}>{item.date}</h1>
                     ))
                 }
-                <h1>Hello world!</h1>
+                <button
+                    onClick={ () =>
+                        this.setState({values: []})
+                    }
+                >
+                    Limpiar lista
+                </button>
             </div>
         );
     }
